@@ -1,0 +1,14 @@
+package "adaves1.delta.bot";
+
+#include <stdnms.hp>
+#include <stdweb.hp>
+
+namespace Cogs.Scrapper.Sources.Google {
+  WebsiteList web = ["www.google.com"];
+  function GoToSite(string Site or bool FromWebsiteList) {
+    if ( typeof(ARGUMENT[0]) == "{class: STRING}" ) {
+      Website site = ARGUMENT[0];
+      site.goto(*);
+    } 
+  }
+}
